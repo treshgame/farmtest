@@ -1,14 +1,11 @@
 <?php
 abstract class AbstractAnimal{
-    public $AnimalId;
+    public $animalId;
     public $name;
     public $product;
 
     public function __construct(){
-
+        $this->animalId = uniqid();
     }
-    public function giveProduct(){
-        
-    }
-
+    abstract function giveProduct();
 }
